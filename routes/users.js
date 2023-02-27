@@ -90,7 +90,8 @@ router.get("/:id", async (req, res) => {
   } finally {
     client.close();
   }
-});
+})
+
 
 router.put("/:id", async (req, res) => {
   const client = new MongoClient(dbUrl);
@@ -115,7 +116,7 @@ router.put("/:id", async (req, res) => {
   } finally {
     client.close();
   }
-});
+})
 
 router.delete("/:id", async (req, res) => {
   const client = new MongoClient(dbUrl);
